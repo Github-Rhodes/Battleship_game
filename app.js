@@ -78,15 +78,15 @@ document.addEventListener('DOMContentLoaded', () =>{
         const isAtRightEdge = current.some(index => (randomStart + index) % width === width - 1)
         const isAtLeftEdge = current.some(index => (randomStart + index) % width === 0)
 
-        if (!isTaken && !isAtRightEdge && !isAtLeftEdge) current.forEach(index => computerSquares[randomStart + index].classList.add('taken, ship.name'))
+        if (!isTaken && !isAtRightEdge && !isAtLeftEdge) current.forEach(index => computerSquares[randomStart + index].classList.add('taken', ship.name))
 
         else generate(ship)
     }
 
     generate(shipArray[0])
-    // generate(shipArray[1])
-    // generate(shipArray[2])
-    // generate(shipArray[3])
-    // generate(shipArray[4])
+    generate(shipArray[1])
+    generate(shipArray[2])
+    generate(shipArray[3])
+    generate(shipArray[4])
 
 })
