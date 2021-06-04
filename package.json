@@ -1,7 +1,17 @@
 {
+  "name": "battleship_game",
+  "version": "1.0.0",
+  "description": "Multiplayer Battleship Game",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
   "dependencies": {
     "express": "^4.17.1",
-    "nodemon": "^2.0.7",
-    "socket.io": "^4.1.2"
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
